@@ -1,0 +1,44 @@
+/* ~ Firefox 139.0.4 shortcuts edit
+Step 1: In Firefox address bar go to about:config 
+Step 2: Set toolkit.legacyUserProfileCustomizations.stylesheets = true
+Step 3: For Windows, got to C:\Users\<User>\AppData\Roaming\Mozilla\Firefox\Profiles\xxxxxx.default-releasexxxxxx\chrome\
+Step 4: In that folder, create or edit userContent.css
+Step 5: Restart Firefox to apply styles
+*/
+
+.top-site-outer {
+    max-width: 90px !important;      
+    border-radius: 4px !important;
+}
+
+.shortcuts-refresh .top-site-outer .top-site-button {
+    padding: 10px 0px 5px 0px !important;
+}
+
+.shortcuts-refresh .top-site-outer .tile {   
+    border-radius: 4px !important;
+}
+
+.top-site-outer .tile .icon-wrapper {
+    border-radius: 4px !important;
+}
+
+
+.shortcuts-refresh .top-site-outer .tile {
+    background: rgba(0, 0, 0, 0) !important;    
+}
+
+
+.top-site-outer .tile {
+    border-radius: 4px !important;
+    box-shadow: none !important;
+}
+
+.icon-pin-small {
+    visibility: hidden !important;
+}
+
+.outer-wrapper .ds-top-sites .top-sites .top-site-outer .top-site-inner > a:is(.active, :focus) .tile {
+    border: none !important;
+    outline: none !important;
+}
